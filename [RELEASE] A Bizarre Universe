@@ -1,0 +1,56 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("[RELEASE] A Bizarre Pooniverse", "Sentinel")
+
+local Tab = Window:NewTab("Autofarm")
+local Section = Tab:NewSection("Autofarm")
+
+Section:NewToggle("On/Off", "ToggleInfo", function(state)
+    if state then
+        _G.Bored = true -- true turns it on, false turns it off
+while _G.Bored == true do
+    wait(1)
+for k,v in pairs(game.Workspace:GetDescendants()) do
+     if v:IsA("MeshPart") and v:FindFirstChild("TouchInterest") then -- if you get errors, replace FindFirstChildOfClass with FindFirstChild
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+        wait(0.5) -- delay so you don't teleport too fast
+    end
+
+end
+end
+    else
+        _G.Bored = false -- true turns it on, false turns it off
+while _G.Bored == true do
+    wait(1)
+for k,v in pairs(game.Workspace:GetDescendants()) do
+     if v:IsA("MeshPart") and v:FindFirstChild("TouchInterest") then -- if you get errors, replace FindFirstChildOfClass with FindFirstChild
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+        wait(0.5) -- delay so you don't teleport too fast
+    end
+
+end
+end
+    end
+end)
+
+local Tab = Window:NewTab("Teleports")
+local Section = Tab:NewSection("Telports")
+
+Section:NewButton("Pawn Shop", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(593.055664, 72.7526016, -19.4577618, -0.00968956109, -6.34729034e-08, -0.999953032, 2.19189111e-08, 1, -6.36882831e-08, 0.999953032, -2.25349943e-08, -0.00968956109)
+end)
+
+Section:NewButton("Spawn", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(183.978165, 79.6493301, -517.056519, 0.0177507177, 8.57579394e-08, 0.999842465, 7.92311994e-09, 1, -8.59121201e-08, -0.999842465, 9.44687351e-09, 0.0177507177)
+end)
+
+Section:NewButton("Stand Locker", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(231.663177, 71.6443787, -551.706177, 0.999995112, 3.23486766e-08, 0.00312796817, -3.25196581e-08, 1, 5.4611931e-08, -0.00312796817, -5.47133823e-08, 0.999995112)
+end)
+
+Section:NewButton("Umbrella Seller", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-687.748413, 71.6934052, -909.063171, 0.999751449, -2.79744974e-08, 0.0222956911, 2.80630026e-08, 1, -3.65677089e-09, -0.0222956911, 4.28154578e-09, 0.999751449)
+end)
+
+Section:NewButton("Black Jack", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(610.537109, 74.9543915, 106.555016, 0.00910846889, -9.02985633e-08, -0.999958515, -7.75041826e-08, 1, -9.10082818e-08, 0.999958515, 7.83299186e-08, 0.00910846889)
+end)
