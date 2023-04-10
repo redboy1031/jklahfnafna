@@ -33,7 +33,7 @@ end
 end)
 
 local Tab = Window:NewTab("Teleports")
-local Section = Tab:NewSection("Telports")
+local Section = Tab:NewSection("Teleports")
 
 Section:NewButton("Pawn Shop", "ButtonInfo", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(593.055664, 72.7526016, -19.4577618, -0.00968956109, -6.34729034e-08, -0.999953032, 2.19189111e-08, 1, -6.36882831e-08, 0.999953032, -2.25349943e-08, -0.00968956109)
@@ -53,4 +53,11 @@ end)
 
 Section:NewButton("Black Jack", "ButtonInfo", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(610.537109, 74.9543915, 106.555016, 0.00910846889, -9.02985633e-08, -0.999958515, -7.75041826e-08, 1, -9.10082818e-08, 0.999958515, 7.83299186e-08, 0.00910846889)
+end)
+
+local Tab = Window:NewTab("Misc")
+local Section = Tab:NewSection("Misc")
+
+Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.LeftAlt, function()
+	Library:ToggleUI()
 end)
